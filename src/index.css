@@ -1,21 +1,36 @@
 /* =============================================================================
    Estilos generales de toda la web
    -----------------------------------------------------------------------------
-   Las "variables" (--nombre) guardan los colores de la marca en un solo lugar.
-   Si mañana cambia un color, se cambia acá y se actualiza toda la web.
-   Paleta pedida: negro, beige, naranja, azul.
+   Las "variables" (--nombre) guardan los colores y las letras de la marca en un
+   solo lugar. Si mañana cambia un color, se cambia ACÁ y se actualiza toda la
+   web. Son los colores del diseño aprobado en Claude Design (09/10/2026).
    ============================================================================= */
 :root {
-  --negro: #1c1a17;
-  --beige: #f3ebdd;
-  --naranja: #d9692b;
-  --azul: #2f5d8a;
-  --blanco: #fffdf9;
-  --borde: #e2d6c2;
-  --texto: #2b2722;
-  --texto-suave: #6e6559;
+  /* --- Colores de la marca --- */
+  --violeta: #4b2c82; /* encabezado, pie, botones, precios, links */
+  --violeta-oscuro: #351c61; /* violeta al pasar el mouse por encima */
+  --beige: #f3ebdd; /* fondo de la página y texto sobre violeta */
+  --blanco: #fffdf9; /* fondo de las tarjetas */
+  --borde: #e2d6c2; /* bordes finos de tarjetas */
+  --borde-fuerte: #cdbfa8; /* bordes de botones y campos */
+  --texto: #1c1a17; /* texto principal (casi negro) */
+  --titulo: #3b2a1e; /* títulos (marrón muy oscuro) */
+  --texto-suave: #4a4238; /* textos secundarios */
+  --lila-suave: #ece4f7; /* fondo de avisos ("todo se hace a pedido") */
+  --lila-borde: #d3c4ec; /* borde de los avisos */
+  --lila-claro: #c9b3ee; /* huellita del logo */
+  --lila-flecha: #a48ccb; /* flechitas de la ruta (Inicio › Pretales) */
 
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  /* --- Letras --- */
+  --letra-titulos: 'Fraunces', Georgia, serif;
+  --letra-textos: 'DM Sans', system-ui, 'Segoe UI', Roboto, sans-serif;
+
+  /* --- Medidas comunes --- */
+  --ancho-maximo: 1200px; /* ancho máximo del contenido en pantallas grandes */
+  --redondeo: 20px; /* esquinas redondeadas de las tarjetas */
+
+  font-family: var(--letra-textos);
+  font-size: 16px;
   line-height: 1.5;
   color: var(--texto);
   background: var(--beige);
@@ -24,6 +39,44 @@
 body {
   margin: 0;
   min-height: 100vh;
+}
+
+/* Los títulos usan la letra de títulos (Fraunces) */
+h1,
+h2,
+h3 {
+  font-family: var(--letra-titulos);
+  color: var(--titulo);
+  line-height: 1.1;
+}
+
+a {
+  color: var(--violeta);
+}
+
+a:hover {
+  color: var(--violeta-oscuro);
+}
+
+/* Contorno visible al moverse con el teclado (accesibilidad) */
+:focus-visible {
+  outline: 3px solid var(--lila-claro);
+  outline-offset: 2px;
+}
+
+/* Contenedor centrado con el ancho máximo de la web */
+.contenedor {
+  width: 100%;
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 0 16px;
+  }
 }
 
 /* Mensajes de "cargando", error o página no encontrada (se usan en varias páginas) */

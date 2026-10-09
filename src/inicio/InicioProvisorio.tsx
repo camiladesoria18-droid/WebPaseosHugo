@@ -36,7 +36,7 @@ export function InicioProvisorio() {
   // 3) Ya tenemos el catálogo: lo mostramos
   return (
     <main className="inicio">
-      <header className="encabezado">
+      <header className="inicio-encabezado">
         <h1>{catalogo.negocio.nombre}</h1>
         <p className="lema">{catalogo.negocio.lema}</p>
       </header>
@@ -62,7 +62,7 @@ export function InicioProvisorio() {
         </ul>
       </section>
 
-      <footer className="pie">
+      <footer className="inicio-pie">
         <p>Precios actualizados: {catalogo.actualizado}</p>
         <p>Página provisoria · {catalogo.productos.length} productos cargados</p>
       </footer>

@@ -1,18 +1,14 @@
-/* Estilos de la página de categoría (provisorios hasta definir el estilo visual). */
+/* Estilos de la página de categoría.
+   Ya usa los colores nuevos; el diseño completo de esta página llega en la parte 3 del Paso 3. */
 
 .categoria {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 24px 16px 40px;
+  padding-top: 28px;
+  padding-bottom: 56px;
 }
 
 .categoria h1 {
-  color: var(--negro);
-  margin: 8px 0 20px;
-}
-
-.categoria-volver a {
-  color: var(--azul);
+  font-size: 48px;
+  margin: 4px 0 20px;
 }
 
 .productos {
@@ -26,14 +22,14 @@
 .producto {
   background: var(--blanco);
   border: 1px solid var(--borde);
-  border-radius: 12px;
+  border-radius: var(--redondeo);
   padding: 16px;
 }
 
 .producto h2 {
   font-size: 1.2rem;
   margin: 0 0 6px;
-  color: var(--negro);
+  color: var(--titulo);
 }
 
 .producto p {
@@ -47,14 +43,14 @@
 }
 
 .producto-precio {
-  color: var(--naranja);
+  color: var(--violeta);
   font-weight: bold;
 }
 
 .etiqueta {
   display: inline-block;
   font-size: 0.75rem;
-  background: var(--negro);
+  background: var(--texto);
   color: var(--beige);
   border-radius: 999px;
   padding: 2px 10px;

@@ -9,6 +9,7 @@ import { useCatalogo } from './useCatalogo'
 import { precioDesde, textoUnidad } from './precios'
 import type { Producto } from './tipos'
 import { formatearPrecio } from '../compartido/formato'
+import { RutaNavegacion } from '../compartido/RutaNavegacion'
 import './PaginaCategoria.css'
 
 /** Arma el texto del precio de un producto, por ejemplo "Desde $ 9.500" o "$ 3.000 por letra". */
@@ -44,17 +45,16 @@ export function PaginaCategoria() {
 
   // 3) Mostramos las tarjetas de productos
   return (
-    <main className="categoria">
-      <p className="categoria-volver">
-        <Link to="/">← Todas las categorías</Link>
-      </p>
+    <main className="contenedor categoria">
+      {/* Inicio › Pretales */}
+      <RutaNavegacion pasos={[{ texto: categoria.nombre }]} />
       <h1>{categoria.nombre}</h1>
 
       <ul className="productos">
         {productos.map((producto) => (
           <li key={producto.id} className="producto">
             <h2>{producto.nombre}</h2>
-            {producto.colores === 'solo-negro' && <span className="etiqueta">Solo negro</span>}
+            {producto.colores === 'solo-negro' && <span className="etiqueta">Solo en negro</span>}
             <p>{producto.descripcion}</p>
             {producto.notas && <p className="producto-nota">{producto.notas}</p>}
             {producto.variantes.length > 1 && (

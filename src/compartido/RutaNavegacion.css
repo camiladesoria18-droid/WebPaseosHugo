@@ -1,0 +1,37 @@
+/* Ruta de navegación con forma de pastilla (diseño aprobado) */
+
+.ruta {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 999px;
+  padding: 8px 16px;
+  margin-bottom: 14px;
+}
+
+.ruta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--violeta);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.ruta-link:hover {
+  text-decoration: underline;
+}
+
+.ruta-flecha {
+  display: flex;
+  color: var(--lila-flecha);
+}
+
+.ruta-actual {
+  font-weight: 700;
+  color: var(--texto);
+}

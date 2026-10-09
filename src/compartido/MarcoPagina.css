@@ -1,38 +1,196 @@
-/* Estilos del marco común (provisorios hasta definir el estilo visual). */
+/* =============================================================================
+   Estilos del marco común: encabezado y pie (diseño aprobado)
+   ============================================================================= */
 
+/* El marco ocupa por lo menos toda la pantalla, así el pie queda siempre abajo */
 .marco {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-.marco-encabezado {
-  background: var(--negro);
-  padding: 14px 16px;
-  text-align: center;
-}
-
-.marco-marca {
-  color: var(--beige);
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-decoration: none;
-}
-
 .marco-contenido {
-  flex: 1; /* ocupa todo el espacio libre, así el pie queda abajo */
+  flex: 1; /* ocupa todo el espacio libre entre el encabezado y el pie */
 }
 
-.marco-pie {
+/* ---------------------------- ENCABEZADO ---------------------------- */
+.encabezado {
+  background: var(--violeta);
+  color: var(--beige);
+}
+
+.encabezado-fila {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px 16px;
-  border-top: 1px solid var(--borde);
-  color: var(--texto-suave);
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
-.marco-pie a {
-  color: var(--azul);
+.encabezado-marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--beige);
+  text-decoration: none;
+  font-family: var(--letra-titulos);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.encabezado-marca:hover {
+  color: var(--beige);
+}
+
+.encabezado-huella {
+  display: flex;
+  color: var(--lila-claro);
+}
+
+.encabezado-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 26px;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.encabezado-menu a {
+  color: var(--beige);
+  text-decoration: none;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent; /* raya invisible: aparece al pasar el mouse */
+}
+
+.encabezado-menu a:hover,
+.encabezado-menu a.activo {
+  color: var(--beige);
+  border-bottom-color: var(--lila-claro);
+}
+
+.encabezado-carrito {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px; /* tamaño cómodo para tocar con el dedo */
+  padding: 8px 16px;
+  border: 1px solid var(--beige);
+  border-radius: 999px; /* forma de píldora */
+  background: var(--beige);
+  color: var(--violeta);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.encabezado-carrito:disabled {
+  cursor: default;
+}
+
+/* Pantallas angostas (celular): el menú pasa abajo, en una fila que se desliza */
+@media (max-width: 760px) {
+  .encabezado-fila {
+    padding-top: 10px;
+    padding-bottom: 6px;
+  }
+
+  .encabezado-marca {
+    font-size: 21px;
+  }
+
+  .encabezado-menu {
+    order: 3; /* va después del carrito, en su propia fila */
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto; /* si no entra, se desliza con el dedo */
+    font-size: 16px;
+    gap: 20px;
+    padding-bottom: 4px;
+  }
+
+  .encabezado-menu a {
+    white-space: nowrap;
+  }
+}
+
+/* ------------------------------- PIE -------------------------------- */
+.pie {
+  background: var(--violeta);
+  color: #ffffff;
+}
+
+.pie-fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pie-marca {
+  flex: 1 1 260px;
+  font-family: var(--letra-titulos);
+  font-size: 44px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.pie-lema {
+  flex: 1 1 280px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.pie-contacto {
+  flex: 1 1 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  font-weight: 500;
+}
+
+/* Cada dato de contacto: ícono + texto en la misma línea */
+.pie-contacto a,
+.pie-contacto span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  text-decoration: none; /* sin subrayado... */
+}
+
+.pie-contacto a:hover {
+  color: var(--beige);
+  text-decoration: underline; /* ...salvo al pasar el mouse, como pista de que se puede tocar */
+}
+
+/* En celular el pie se apila y se centra */
+@media (max-width: 760px) {
+  .pie-fila {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding-top: 26px;
+    padding-bottom: 30px;
+  }
+
+  .pie-marca {
+    flex: none;
+    font-size: 30px;
+  }
+
+  .pie-lema {
+    flex: none;
+    font-size: 14px;
+  }
+
+  .pie-contacto {
+    flex: none;
+    align-items: center;
+  }
 }
