@@ -4,6 +4,7 @@
 // Sirve para comprobar que la web lee bien el catálogo.
 // Se reemplaza más adelante por la página de inicio con diseño, logo y fotos.
 // =============================================================================
+import { Link } from '@tanstack/react-router'
 import { useCatalogo } from '../catalogo/useCatalogo'
 import type { Catalogo } from '../catalogo/tipos'
 import { formatearPrecio } from '../compartido/formato'
@@ -46,12 +47,15 @@ export function InicioProvisorio() {
           {catalogo.categorias.map((categoria) => {
             const { cantidad, desde } = resumirCategoria(catalogo, categoria.id)
             return (
-              <li key={categoria.id} className="tarjeta">
-                <h3>{categoria.nombre}</h3>
-                <p>
-                  {cantidad} {cantidad === 1 ? 'producto' : 'productos'}
-                </p>
-                <p className="desde">Desde {formatearPrecio(desde)}</p>
+              <li key={categoria.id}>
+                {/* Cada tarjeta es un enlace a la página de su categoría (ej.: /pretales) */}
+                <Link to="/$categoriaId" params={{ categoriaId: categoria.id }} className="tarjeta">
+                  <h3>{categoria.nombre}</h3>
+                  <p>
+                    {cantidad} {cantidad === 1 ? 'producto' : 'productos'}
+                  </p>
+                  <p className="desde">Desde {formatearPrecio(desde)}</p>
+                </Link>
               </li>
             )
           })}

@@ -32,10 +32,19 @@
 }
 
 .tarjeta {
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  color: inherit;
+  text-decoration: none;
   background: var(--blanco);
   border: 1px solid var(--borde);
   border-radius: 12px;
   padding: 16px;
+}
+
+.tarjeta:hover {
+  border-color: var(--naranja);
 }
 
 .tarjeta h3 {
@@ -57,13 +66,4 @@
   text-align: center;
   font-size: 0.9rem;
   color: var(--texto-suave);
-}
-
-.aviso {
-  text-align: center;
-  padding: 48px 16px;
-}
-
-.aviso-error {
-  color: #b42318;
 }

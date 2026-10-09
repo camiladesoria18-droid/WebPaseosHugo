@@ -1,0 +1,38 @@
+/* Estilos del marco común (provisorios hasta definir el estilo visual). */
+
+.marco {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.marco-encabezado {
+  background: var(--negro);
+  padding: 14px 16px;
+  text-align: center;
+}
+
+.marco-marca {
+  color: var(--beige);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.marco-contenido {
+  flex: 1; /* ocupa todo el espacio libre, así el pie queda abajo */
+}
+
+.marco-pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 16px;
+  border-top: 1px solid var(--borde);
+  color: var(--texto-suave);
+}
+
+.marco-pie a {
+  color: var(--azul);
+}

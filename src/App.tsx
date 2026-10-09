@@ -1,11 +1,12 @@
 // =============================================================================
 // App: el componente principal de la web
 // -----------------------------------------------------------------------------
-// Por ahora muestra solo la página de inicio provisoria.
-// Más adelante, acá se conecta el "cartel" de secciones (TanStack Router).
+// Le entrega el control al router: según la dirección del navegador,
+// el router decide qué página mostrar (ver src/rutas/rutas.tsx).
 // =============================================================================
-import { InicioProvisorio } from './inicio/InicioProvisorio'
+import { RouterProvider } from '@tanstack/react-router'
+import { router } from './rutas/rutas'
 
 export default function App() {
-  return <InicioProvisorio />
+  return <RouterProvider router={router} />
 }
