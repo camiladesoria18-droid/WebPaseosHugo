@@ -71,6 +71,8 @@ export interface Producto {
 export interface Categoria {
   id: string
   nombre: string
+  /** Línea corta que se muestra en la tarjeta del inicio (ej.: "Laila, Alma, Diabla, Tyson"). */
+  detalle?: string
 }
 
 export interface OpcionEntrega {

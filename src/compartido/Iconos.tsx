@@ -99,3 +99,13 @@ export function IconoFlechita({ tamano = 14 }: PropsIcono) {
     </svg>
   )
 }
+
+/** Relojito (aviso de demora: todo se hace a pedido). */
+export function IconoReloj({ tamano = 28 }: PropsIcono) {
+  return (
+    <svg {...base(tamano)}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2" />
+    </svg>
+  )
+}

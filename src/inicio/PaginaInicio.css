@@ -1,0 +1,280 @@
+/* =============================================================================
+   Estilos de la página de inicio (diseño aprobado)
+   ============================================================================= */
+
+/* Cada bloque del inicio deja aire arriba y abajo */
+.seccion {
+  padding-top: 24px;
+  padding-bottom: 48px;
+}
+
+.seccion h2 {
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+
+.seccion-bajada {
+  margin: -12px 0 20px;
+}
+
+/* ------------------------------ 1) PORTADA ------------------------------ */
+.portada {
+  display: grid;
+  /* Dos columnas (texto | foto) si entran; si no, una debajo de la otra */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+
+.portada-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.portada h1 {
+  margin: 0;
+  font-size: 56px;
+  line-height: 1.05;
+}
+
+.portada-lema {
+  margin: 0;
+  font-size: 19px;
+  color: var(--texto-suave);
+  max-width: 520px;
+}
+
+.portada-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+/* ------------------------- 2) y 3) GRILLAS DE TARJETAS ------------------------- */
+.grilla {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.grilla-categorias {
+  /* Tantas columnas de al menos 260px como entren */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.grilla-kits {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+/* Tarjeta: toda la tarjeta es un link */
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--redondeo);
+  overflow: hidden; /* para que la foto respete las esquinas redondeadas */
+  color: var(--texto);
+  text-decoration: none;
+  transition:
+    border-color 0.15s,
+    transform 0.15s;
+}
+
+.tarjeta:hover {
+  color: var(--texto);
+  border-color: var(--lila-flecha);
+  transform: translateY(-2px); /* se levanta un poquito al pasar el mouse */
+}
+
+.tarjeta h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.tarjeta p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.tarjeta-cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 14px 16px 16px;
+}
+
+.precio {
+  font-size: 19px;
+  font-weight: 700 !important;
+  color: var(--violeta);
+  margin-top: 6px !important;
+}
+
+/* La tarjeta de kit tiene la foto adentro, con margen */
+.tarjeta-kit {
+  gap: 12px;
+  padding: 16px;
+}
+
+.tarjeta-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ---------------------------- 4) FRANJA DE PASEOS ---------------------------- */
+.franja-paseos {
+  background: var(--violeta);
+  color: var(--beige);
+}
+
+.franja-paseos-fila {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  align-items: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.franja-paseos h2 {
+  margin: 0 0 12px;
+  font-size: 40px;
+  color: var(--beige);
+}
+
+.franja-paseos p {
+  margin: 0 0 10px;
+  font-size: 17px;
+}
+
+.franja-paseos-precio {
+  font-size: 22px !important;
+  font-weight: 700;
+}
+
+.franja-paseos-precio span {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.franja-paseos-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+/* ------------------------------ 5) CÓMO COMPRAR ------------------------------ */
+.grilla-pasos {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-bottom: 18px;
+}
+
+.paso {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--redondeo);
+  padding: 20px;
+}
+
+.paso strong {
+  font-size: 18px;
+}
+
+.paso span:last-child {
+  font-weight: 500;
+}
+
+.paso-numero {
+  font-family: var(--letra-titulos);
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--violeta);
+}
+
+/* ------------------------------ CELULAR ------------------------------ */
+@media (max-width: 600px) {
+  .portada {
+    padding-top: 26px;
+    gap: 20px;
+  }
+
+  .portada h1 {
+    font-size: 38px;
+  }
+
+  /* La foto de portada, más baja en celular */
+  .portada .lugar-foto {
+    height: 240px !important;
+  }
+
+  .portada-lema {
+    font-size: 17px;
+  }
+
+  .portada-botones .boton {
+    flex: 1 1 100%; /* botones a todo el ancho, fáciles de tocar */
+  }
+
+  .seccion h2 {
+    font-size: 28px;
+  }
+
+  /* Categorías de a dos, con tarjetas más chicas (como en el diseño de celular) */
+  .grilla-categorias {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .grilla-categorias .lugar-foto {
+    height: 92px !important;
+  }
+
+  .grilla-categorias .tarjeta-cuerpo {
+    padding: 10px 12px 12px;
+  }
+
+  .grilla-categorias h3 {
+    font-size: 18px;
+  }
+
+  .grilla-categorias p {
+    font-size: 14px;
+  }
+
+  .grilla-categorias .precio {
+    font-size: 16px;
+  }
+
+  .franja-paseos h2 {
+    font-size: 30px;
+  }
+
+  .franja-paseos-contacto .boton {
+    width: 100%;
+  }
+
+  .aviso-pedido {
+    align-items: flex-start;
+    padding: 14px;
+  }
+
+  .aviso-pedido p {
+    font-size: 15px;
+  }
+}

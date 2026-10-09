@@ -65,39 +65,48 @@
   "categorias": [
     {
       "id": "pretales",
-      "nombre": "Pretales"
+      "nombre": "Pretales",
+      "detalle": "Laila, Alma, Diabla, Tyson"
     },
     {
       "id": "collares",
-      "nombre": "Collares"
+      "nombre": "Collares",
+      "detalle": "Básicos, regulables y reforzados"
     },
     {
       "id": "correas",
-      "nombre": "Correas"
+      "nombre": "Correas",
+      "detalle": "2 m, regulables, hasta 20 m"
     },
     {
       "id": "kits",
-      "nombre": "Kits"
+      "nombre": "Kits",
+      "detalle": "Collar + pretal + correa"
     },
     {
       "id": "paseadores",
-      "nombre": "Paseadores"
+      "nombre": "Paseadores",
+      "detalle": "Hugo, Peke y Multipaseo"
     },
     {
       "id": "identificadores",
-      "nombre": "Identificadores"
+      "nombre": "Identificadores",
+      "detalle": "Letras, chapitas y bordados"
     },
     {
       "id": "decoracion",
-      "nombre": "Decoración"
+      "nombre": "Decoración",
+      "detalle": "Formas 3D, pines y strass"
     },
     {
       "id": "accesorios",
-      "nombre": "Accesorios"
+      "nombre": "Accesorios",
+      "detalle": "Porta bolsa, agarraderas y más"
     },
     {
       "id": "paseos",
-      "nombre": "Paseos"
+      "nombre": "Paseos",
+      "detalle": "Paseos y acompañamiento por hora"
     }
   ],
   "productos": [

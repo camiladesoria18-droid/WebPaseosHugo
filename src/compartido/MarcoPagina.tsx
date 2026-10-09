@@ -52,6 +52,10 @@ export function MarcoPagina() {
                 {categoria.nombre}
               </Link>
             ))}
+            {/* "Cómo comprar" lleva a esa sección del inicio (hash = la parte después del #) */}
+            <Link to="/" hash="como-comprar">
+              Cómo comprar
+            </Link>
           </nav>
 
           {/* El carrito todavía no funciona: se programa en la parte 5 del Paso 3 */}

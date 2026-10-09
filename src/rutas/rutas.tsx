@@ -11,7 +11,7 @@
 import { createRootRoute, createRoute, createRouter } from '@tanstack/react-router'
 import { MarcoPagina } from '../compartido/MarcoPagina'
 import { PaginaNoEncontrada } from '../compartido/PaginaNoEncontrada'
-import { InicioProvisorio } from '../inicio/InicioProvisorio'
+import { PaginaInicio } from '../inicio/PaginaInicio'
 import { PaginaCategoria } from '../catalogo/PaginaCategoria'
 
 // 1) Ruta raíz: el marco que envuelve a todas las páginas
@@ -24,7 +24,7 @@ const rutaRaiz = createRootRoute({
 const rutaInicio = createRoute({
   getParentRoute: () => rutaRaiz,
   path: '/',
-  component: InicioProvisorio,
+  component: PaginaInicio,
 })
 
 // 3) Categoría: "/$categoriaId" significa "cualquier palabra acá".

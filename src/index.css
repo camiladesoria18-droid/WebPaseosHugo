@@ -79,6 +79,96 @@ a:hover {
   }
 }
 
+/* ------------------------------------------------------------------------
+   Piezas que se repiten en varias páginas
+   ------------------------------------------------------------------------ */
+
+/* Botones con forma de píldora */
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px; /* cómodo para tocar con el dedo */
+  padding: 12px 26px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Botón principal: violeta con letra blanca ("Ver el catálogo") */
+.boton-principal {
+  background: var(--violeta);
+  color: #ffffff;
+  border: 2px solid var(--violeta);
+}
+
+.boton-principal:hover {
+  background: var(--violeta-oscuro);
+  border-color: var(--violeta-oscuro);
+  color: #ffffff;
+}
+
+/* Botón secundario: solo el borde ("Contratar un paseo") */
+.boton-borde {
+  color: var(--texto);
+  border: 2px solid var(--texto);
+}
+
+.boton-borde:hover {
+  color: var(--texto);
+  background: rgba(28, 26, 23, 0.06);
+}
+
+/* Botón para fondos violetas: borde y letra beige ("Escribinos por WhatsApp") */
+.boton-claro {
+  color: var(--beige);
+  border: 2px solid var(--beige);
+  border-radius: 12px;
+  font-weight: 600;
+  padding: 12px 20px;
+}
+
+.boton-claro:hover {
+  color: var(--violeta);
+  background: var(--beige);
+}
+
+/* Etiqueta chiquita, por ejemplo "Solo en negro" */
+.etiqueta {
+  display: inline-block;
+  font-size: 12px;
+  background: var(--texto);
+  color: var(--beige);
+  border-radius: 999px;
+  padding: 2px 10px;
+  white-space: nowrap;
+}
+
+/* Aviso lila con relojito: "Todo se hace a pedido..." */
+.aviso-pedido {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--lila-suave);
+  border: 1px solid var(--lila-borde);
+  border-radius: var(--redondeo);
+  padding: 16px 20px;
+  color: var(--violeta);
+}
+
+.aviso-pedido p {
+  margin: 0;
+  color: var(--texto);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.aviso-pedido svg {
+  flex-shrink: 0;
+}
+
 /* Mensajes de "cargando", error o página no encontrada (se usan en varias páginas) */
 .aviso {
   text-align: center;

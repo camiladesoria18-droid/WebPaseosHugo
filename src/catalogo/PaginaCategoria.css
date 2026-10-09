@@ -47,11 +47,3 @@
   font-weight: bold;
 }
 
-.etiqueta {
-  display: inline-block;
-  font-size: 0.75rem;
-  background: var(--texto);
-  color: var(--beige);
-  border-radius: 999px;
-  padding: 2px 10px;
-}

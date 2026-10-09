@@ -20,3 +20,15 @@ export function textoUnidad(unidad: Unidad): string {
   if (unidad === 'hora') return 'por hora'
   return ''
 }
+
+/**
+ * El precio más bajo de toda una categoría (el "Desde $..." de las tarjetas del inicio).
+ * Devuelve null si ningún producto de la categoría tiene precio fijo.
+ */
+export function precioDesdeCategoria(productos: Producto[], idCategoria: string): number | null {
+  const precios = productos
+    .filter((p) => p.categoria === idCategoria)
+    .map(precioDesde)
+    .filter((precio): precio is number => precio !== null)
+  return precios.length > 0 ? Math.min(...precios) : null
+}

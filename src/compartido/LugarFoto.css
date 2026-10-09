@@ -1,0 +1,13 @@
+/* Recuadro rayado que marca dónde va una foto */
+.lugar-foto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 14px;
+  color: #6e6559;
+  /* Rayas diagonales de dos tonos de beige */
+  background: repeating-linear-gradient(135deg, #e6d9c3 0 14px, #ede2d0 14px 28px);
+}
