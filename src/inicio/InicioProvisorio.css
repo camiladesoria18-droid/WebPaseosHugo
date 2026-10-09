@@ -1,0 +1,69 @@
+/* Estilos de la página provisoria (se reemplazan con el diseño definitivo). */
+
+.inicio {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+.encabezado {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.encabezado h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: var(--negro);
+}
+
+.lema {
+  color: var(--azul);
+  font-style: italic;
+  margin-top: 8px;
+}
+
+.categorias {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.tarjeta h3 {
+  margin: 0 0 8px;
+  color: var(--negro);
+}
+
+.tarjeta p {
+  margin: 4px 0;
+}
+
+.desde {
+  color: var(--naranja);
+  font-weight: bold;
+}
+
+.pie {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--texto-suave);
+}
+
+.aviso {
+  text-align: center;
+  padding: 48px 16px;
+}
+
+.aviso-error {
+  color: #b42318;
+}

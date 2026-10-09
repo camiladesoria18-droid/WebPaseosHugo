@@ -1,0 +1,27 @@
+/* =============================================================================
+   Estilos generales de toda la web
+   -----------------------------------------------------------------------------
+   Las "variables" (--nombre) guardan los colores de la marca en un solo lugar.
+   Si mañana cambia un color, se cambia acá y se actualiza toda la web.
+   Paleta pedida: negro, beige, naranja, azul.
+   ============================================================================= */
+:root {
+  --negro: #1c1a17;
+  --beige: #f3ebdd;
+  --naranja: #d9692b;
+  --azul: #2f5d8a;
+  --blanco: #fffdf9;
+  --borde: #e2d6c2;
+  --texto: #2b2722;
+  --texto-suave: #6e6559;
+
+  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  color: var(--texto);
+  background: var(--beige);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}

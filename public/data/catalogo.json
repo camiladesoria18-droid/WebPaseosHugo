@@ -1,0 +1,922 @@
+{
+  "version": 1,
+  "actualizado": "2026-10-09",
+  "moneda": "ARS",
+  "negocio": {
+    "nombre": "Paseos Hugo",
+    "lema": "Diseños personalizados para mascotas que merecen paseos cómodos, seguros y con estilo",
+    "whatsapp": "5493434409950",
+    "instagram": "paseoshugo",
+    "ciudad": "Paraná, Entre Ríos"
+  },
+  "entrega": [
+    {
+      "id": "envio",
+      "nombre": "Envío a domicilio en Paraná",
+      "precio": 1000
+    },
+    {
+      "id": "retiro",
+      "nombre": "Retiro / punto de encuentro",
+      "precio": 0
+    }
+  ],
+  "aclaraciones": [
+    "Todos los productos son personalizados y hechos a medida.",
+    "Se pueden comprar juntos o por separado.",
+    "Hacemos restauraciones.",
+    "Diseños fuera del catálogo: a consultar.",
+    "Cada producto puede ser fijo o regulable.",
+    "Se pueden agregar enganches o agarres.",
+    "Todos los herrajes son soldados."
+  ],
+  "colores": {
+    "cinta": ["negro", "naranja", "verde claro", "lila", "amarillo", "rosa", "violeta", "azul", "verde oscuro", "rojo", "turquesa", "fucsia"],
+    "identificadores": [
+      "crema",
+      "amarillo",
+      "anaranjado",
+      "rojo",
+      "rosa",
+      "fucsia",
+      "violeta",
+      "bordó",
+      "celeste pastel",
+      "celeste",
+      "azul",
+      "azul marino",
+      "amarillo pastel",
+      "verde menta",
+      "verde oliva",
+      "verde metalizado",
+      "beige",
+      "tan",
+      "marrón",
+      "dorado",
+      "traslúcido",
+      "blanco",
+      "mármol",
+      "plateado",
+      "negro"
+    ]
+  },
+  "anchosCintaMm": [15, 20, 25, 30, 40],
+  "categorias": [
+    {
+      "id": "pretales",
+      "nombre": "Pretales"
+    },
+    {
+      "id": "collares",
+      "nombre": "Collares"
+    },
+    {
+      "id": "correas",
+      "nombre": "Correas"
+    },
+    {
+      "id": "kits",
+      "nombre": "Kits"
+    },
+    {
+      "id": "paseadores",
+      "nombre": "Paseadores"
+    },
+    {
+      "id": "identificadores",
+      "nombre": "Identificadores"
+    },
+    {
+      "id": "decoracion",
+      "nombre": "Decoración"
+    },
+    {
+      "id": "accesorios",
+      "nombre": "Accesorios"
+    },
+    {
+      "id": "paseos",
+      "nombre": "Paseos"
+    }
+  ],
+  "productos": [
+    {
+      "id": "pretal-laila",
+      "categoria": "pretales",
+      "nombre": "Pretal Laila",
+      "descripcion": "Pretal hecho a medida, fijo o regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "s",
+          "nombre": "S",
+          "precio": 12000,
+          "medidasCm": {
+            "lomo": [10, 15],
+            "largoCuello": [30, 40],
+            "largoPecho": [10, 15],
+            "contornoPecho": [40, 55]
+          }
+        },
+        {
+          "id": "m",
+          "nombre": "M",
+          "precio": 14500,
+          "medidasCm": {
+            "lomo": [12, 18],
+            "largoCuello": [35, 45],
+            "largoPecho": [12, 18],
+            "contornoPecho": [50, 65]
+          }
+        },
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 18000,
+          "medidasCm": {
+            "lomo": [15, 22],
+            "largoCuello": [40, 55],
+            "largoPecho": [15, 22],
+            "contornoPecho": [60, 75]
+          }
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 22000,
+          "medidasCm": {
+            "lomo": [18, 25],
+            "largoCuello": [50, 65],
+            "largoPecho": [18, 25],
+            "contornoPecho": [70, 90]
+          }
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 27000,
+          "medidasCm": {
+            "lomo": [22, 30],
+            "largoCuello": [60, 75],
+            "largoPecho": [20, 30],
+            "contornoPecho": [85, 110]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pretal-alma",
+      "categoria": "pretales",
+      "nombre": "Pretal Alma",
+      "descripcion": "Pretal hecho a medida, fijo o regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "s",
+          "nombre": "S",
+          "precio": 9500,
+          "medidasCm": {
+            "largoCuello": [30, 40],
+            "largoPecho": [12, 18],
+            "contornoPecho": [40, 55]
+          }
+        },
+        {
+          "id": "m",
+          "nombre": "M",
+          "precio": 11500,
+          "medidasCm": {
+            "largoCuello": [35, 45],
+            "largoPecho": [15, 22],
+            "contornoPecho": [50, 65]
+          }
+        },
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 13500,
+          "medidasCm": {
+            "largoCuello": [40, 55],
+            "largoPecho": [18, 25],
+            "contornoPecho": [60, 75]
+          }
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 16500,
+          "medidasCm": {
+            "largoCuello": [50, 65],
+            "largoPecho": [20, 30],
+            "contornoPecho": [70, 90]
+          }
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 19500,
+          "medidasCm": {
+            "largoCuello": [60, 75],
+            "largoPecho": [25, 35],
+            "contornoPecho": [85, 110]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pretal-diabla",
+      "categoria": "pretales",
+      "nombre": "Pretal Diabla",
+      "descripcion": "Pretal hecho a medida, fijo o regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 26000,
+          "medidasCm": {
+            "lomo": [15, 25],
+            "largoCuello": [40, 55],
+            "largoPecho": [15, 22],
+            "contornoPecho": [60, 75]
+          }
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 32000,
+          "medidasCm": {
+            "lomo": [18, 30],
+            "largoCuello": [50, 65],
+            "largoPecho": [18, 25],
+            "contornoPecho": [70, 90]
+          }
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 38000,
+          "medidasCm": {
+            "lomo": [22, 35],
+            "largoCuello": [60, 75],
+            "largoPecho": [20, 30],
+            "contornoPecho": [85, 110]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pretal-tyson",
+      "categoria": "pretales",
+      "nombre": "Pretal Tyson",
+      "descripcion": "Pretal reforzado: cinta más reforzada y remaches más grandes.",
+      "unidad": "unidad",
+      "colores": "solo-negro",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 30000,
+          "medidasCm": {
+            "lomo": [15, 22],
+            "largoCuello": [40, 55],
+            "largoPecho": [15, 22],
+            "contornoPecho": [60, 75]
+          }
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 32000,
+          "medidasCm": {
+            "lomo": [18, 25],
+            "largoCuello": [50, 65],
+            "largoPecho": [18, 25],
+            "contornoPecho": [70, 90]
+          }
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 35000,
+          "medidasCm": {
+            "lomo": [22, 30],
+            "largoCuello": [60, 75],
+            "largoPecho": [20, 30],
+            "contornoPecho": [85, 110]
+          }
+        }
+      ]
+    },
+    {
+      "id": "pretal-discapacidad",
+      "categoria": "pretales",
+      "nombre": "Pretal para discapacidad",
+      "descripcion": "Adaptado a perros con discapacidad motora. Se hace a pedido.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "a-medida",
+          "nombre": "A medida",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "id": "collar",
+      "categoria": "collares",
+      "nombre": "Collar",
+      "descripcion": "Collar hecho a medida. Básico (fijo) o regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "opcion-1",
+          "nombre": "Opción 1",
+          "precio": 6500,
+          "precioRegulable": 7500,
+          "anchoCm": 1.5,
+          "largoCm": [25, 35]
+        },
+        {
+          "id": "opcion-2",
+          "nombre": "Opción 2",
+          "precio": 7500,
+          "precioRegulable": 8000,
+          "anchoCm": 2,
+          "largoCm": [30, 45]
+        },
+        {
+          "id": "opcion-3",
+          "nombre": "Opción 3",
+          "precio": 9000,
+          "precioRegulable": 10500,
+          "anchoCm": 2.5,
+          "largoCm": [40, 55]
+        },
+        {
+          "id": "opcion-4",
+          "nombre": "Opción 4",
+          "precio": 11000,
+          "precioRegulable": 12500,
+          "anchoCm": 3,
+          "largoCm": [50, 65]
+        },
+        {
+          "id": "opcion-5",
+          "nombre": "Opción 5",
+          "precio": 13000,
+          "precioRegulable": 14000,
+          "anchoCm": 4,
+          "largoCm": [60, 75]
+        }
+      ]
+    },
+    {
+      "id": "collar-reforzado",
+      "categoria": "collares",
+      "nombre": "Collar reforzado",
+      "descripcion": "Collar con cinta reforzada.",
+      "unidad": "unidad",
+      "colores": "solo-negro",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "opcion-3",
+          "nombre": "Opción 3",
+          "precio": 17000,
+          "anchoCm": 3,
+          "largoCm": [40, 55]
+        },
+        {
+          "id": "opcion-4",
+          "nombre": "Opción 4",
+          "precio": 20000,
+          "anchoCm": 4,
+          "largoCm": [50, 65]
+        }
+      ]
+    },
+    {
+      "id": "correa",
+      "categoria": "correas",
+      "nombre": "Correa",
+      "descripcion": "Correa de 2 m. Básica o regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "largoM": 2,
+      "variantes": [
+        {
+          "id": "opcion-1",
+          "nombre": "Opción 1",
+          "precio": 9000,
+          "precioRegulable": 12000,
+          "anchoCm": 1.5
+        },
+        {
+          "id": "opcion-2",
+          "nombre": "Opción 2",
+          "precio": 10500,
+          "precioRegulable": 14000,
+          "anchoCm": 2
+        },
+        {
+          "id": "opcion-3",
+          "nombre": "Opción 3",
+          "precio": 12500,
+          "precioRegulable": 17000,
+          "anchoCm": 2.5
+        },
+        {
+          "id": "opcion-4",
+          "nombre": "Opción 4",
+          "precio": 15000,
+          "precioRegulable": 20000,
+          "anchoCm": 3
+        }
+      ]
+    },
+    {
+      "id": "correa-reforzada",
+      "categoria": "correas",
+      "nombre": "Correa reforzada",
+      "descripcion": "Correa de 2 m con cinta reforzada.",
+      "unidad": "unidad",
+      "colores": "solo-negro",
+      "imagenes": [],
+      "largoM": 2,
+      "variantes": [
+        {
+          "id": "ancho-3",
+          "nombre": "3 cm",
+          "precio": 15000,
+          "anchoCm": 3
+        },
+        {
+          "id": "ancho-4",
+          "nombre": "4 cm",
+          "precio": 18000,
+          "anchoCm": 4
+        }
+      ]
+    },
+    {
+      "id": "correa-larga",
+      "categoria": "correas",
+      "nombre": "Correa larga",
+      "descripcion": "Correas más largas, hasta 20 m.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "a-medida",
+          "nombre": "A medida",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "id": "kit-laila",
+      "categoria": "kits",
+      "nombre": "Kit Laila",
+      "descripcion": "Collar básico + Pretal Laila + Correa básica.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "incluye": ["collar", "pretal-laila", "correa"],
+      "variantes": [
+        {
+          "id": "s",
+          "nombre": "S",
+          "precio": 25000
+        },
+        {
+          "id": "m",
+          "nombre": "M",
+          "precio": 30000
+        },
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 34500
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 37500
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 52500
+        }
+      ]
+    },
+    {
+      "id": "kit-alma",
+      "categoria": "kits",
+      "nombre": "Kit Alma",
+      "descripcion": "Collar básico + Pretal Alma + Correa básica.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "incluye": ["collar", "pretal-alma", "correa"],
+      "variantes": [
+        {
+          "id": "s",
+          "nombre": "S",
+          "precio": 22000
+        },
+        {
+          "id": "m",
+          "nombre": "M",
+          "precio": 26000
+        },
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 31000
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 37000
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 42000
+        }
+      ]
+    },
+    {
+      "id": "kit-reforzado",
+      "categoria": "kits",
+      "nombre": "Kit reforzado (Tyson)",
+      "descripcion": "Collar + Pretal + Correa reforzados.",
+      "unidad": "unidad",
+      "colores": "solo-negro",
+      "imagenes": [],
+      "incluye": ["collar-reforzado", "pretal-tyson", "correa-reforzada"],
+      "variantes": [
+        {
+          "id": "l",
+          "nombre": "L",
+          "precio": 58000
+        },
+        {
+          "id": "xl",
+          "nombre": "XL",
+          "precio": 60000
+        },
+        {
+          "id": "xxl",
+          "nombre": "XXL",
+          "precio": 70000
+        }
+      ]
+    },
+    {
+      "id": "paseador-hugo",
+      "categoria": "paseadores",
+      "nombre": "Paseador Hugo",
+      "descripcion": "Arnés para la persona. Permite pasear uno o varios perros. 100% regulable.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 40000
+        }
+      ]
+    },
+    {
+      "id": "paseador-peke",
+      "categoria": "paseadores",
+      "nombre": "Paseador Peke",
+      "descripcion": "Se sujeta a la cintura.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "ancho-15",
+          "nombre": "15 cm",
+          "precio": 15000,
+          "anchoCm": 15
+        },
+        {
+          "id": "ancho-20",
+          "nombre": "20 cm",
+          "precio": 17000,
+          "anchoCm": 20
+        },
+        {
+          "id": "ancho-25",
+          "nombre": "25 cm",
+          "precio": 20000,
+          "anchoCm": 25
+        },
+        {
+          "id": "ancho-30",
+          "nombre": "30 cm",
+          "precio": 22000,
+          "anchoCm": 30
+        }
+      ]
+    },
+    {
+      "id": "multipaseo",
+      "categoria": "paseadores",
+      "nombre": "Multipaseo",
+      "descripcion": "Para pasear varios perros a la vez.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 10000
+        }
+      ]
+    },
+    {
+      "id": "identificador-perla",
+      "categoria": "identificadores",
+      "nombre": "Perla",
+      "descripcion": "Identificador con letras tipo perla.",
+      "notas": "Al nombre se le suman 1 o 2 números de teléfono.",
+      "unidad": "letra",
+      "colores": "identificadores",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por letra",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "identificador-individuales",
+      "categoria": "identificadores",
+      "nombre": "Individuales",
+      "descripcion": "Identificador con letras individuales.",
+      "notas": "Al nombre se le suman 1 o 2 números de teléfono.",
+      "unidad": "letra",
+      "colores": "identificadores",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por letra",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "identificador-letras",
+      "categoria": "identificadores",
+      "nombre": "Letras",
+      "descripcion": "Identificador con letras.",
+      "notas": "Al nombre se le suman 1 o 2 números de teléfono.",
+      "unidad": "letra",
+      "colores": "identificadores",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por letra",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "identificador-letras-metalicas",
+      "categoria": "identificadores",
+      "nombre": "Letras metálicas",
+      "descripcion": "Letras metálicas. Solo para cintas de 30 mm.",
+      "notas": "Al nombre se le suman 1 o 2 números de teléfono.",
+      "unidad": "letra",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por letra",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "identificador-chapita",
+      "categoria": "identificadores",
+      "nombre": "Chapita",
+      "descripcion": "Chapita identificadora.",
+      "notas": "Al nombre se le suman 1 o 2 números de teléfono.",
+      "unidad": "unidad",
+      "colores": "identificadores",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Única",
+          "precio": 6000
+        }
+      ]
+    },
+    {
+      "id": "identificador-bordado",
+      "categoria": "identificadores",
+      "nombre": "Bordado",
+      "descripcion": "Bordado de nombre y número en pechera, collar, correa o en todos.",
+      "notas": "Colores de hilo: muestrario en foto.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 7000
+        }
+      ]
+    },
+    {
+      "id": "formas-3d",
+      "categoria": "decoracion",
+      "nombre": "Formas 3D",
+      "descripcion": "Formas impresas en 3D, colores a elección, bañadas en resina.",
+      "unidad": "unidad",
+      "colores": "identificadores",
+      "imagenes": [],
+      "formas": ["sol", "estrella", "flor", "huella", "moño", "luna", "hueso", "corona", "nube"],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por forma",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "pines",
+      "categoria": "decoracion",
+      "nombre": "Pines",
+      "descripcion": "Pines decorativos.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por pin",
+          "precio": 1000
+        }
+      ]
+    },
+    {
+      "id": "bordado-flores",
+      "categoria": "decoracion",
+      "nombre": "Bordados de flores",
+      "descripcion": "Bordados de flores en collar, correa o pechera.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "a-medida",
+          "nombre": "A medida",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "id": "strass",
+      "categoria": "decoracion",
+      "nombre": "Strass",
+      "descripcion": "Strass en forma de gota, flor o corazón, cosidos a mano. Remaches con brillo.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "a-medida",
+          "nombre": "A medida",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "id": "canutillos",
+      "categoria": "accesorios",
+      "nombre": "Canutillos",
+      "descripcion": "Canutillos.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 5000
+        }
+      ]
+    },
+    {
+      "id": "porta-bolsa",
+      "categoria": "accesorios",
+      "nombre": "Porta bolsa",
+      "descripcion": "Porta bolsa, 4 modelos.",
+      "unidad": "unidad",
+      "colores": "identificadores",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 8000
+        }
+      ]
+    },
+    {
+      "id": "cinturon-seguridad",
+      "categoria": "accesorios",
+      "nombre": "Cinturón de seguridad",
+      "descripcion": "Cinturón de seguridad.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Único",
+          "precio": 10000
+        }
+      ]
+    },
+    {
+      "id": "agarradera",
+      "categoria": "accesorios",
+      "nombre": "Agarradera",
+      "descripcion": "Agarraderas para pechera, collar o correa.",
+      "unidad": "unidad",
+      "colores": "cinta",
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "unico",
+          "nombre": "Por agarradera",
+          "precio": 3000
+        }
+      ]
+    },
+    {
+      "id": "llavero",
+      "categoria": "accesorios",
+      "nombre": "Llavero con tu mascota",
+      "descripcion": "Llaveros con la imagen de tu mascota.",
+      "unidad": "unidad",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "a-medida",
+          "nombre": "A medida",
+          "precio": null
+        }
+      ]
+    },
+    {
+      "id": "paseo",
+      "categoria": "paseos",
+      "nombre": "Paseo",
+      "descripcion": "Paseo, acompañamiento al veterinario o peluquería, y paseos personalizados.",
+      "unidad": "hora",
+      "colores": null,
+      "imagenes": [],
+      "variantes": [
+        {
+          "id": "hora",
+          "nombre": "Por hora",
+          "precio": 7000
+        }
+      ]
+    }
+  ]
+}
