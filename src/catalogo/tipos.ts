@@ -73,6 +73,8 @@ export interface Categoria {
   nombre: string
   /** Línea corta que se muestra en la tarjeta del inicio (ej.: "Laila, Alma, Diabla, Tyson"). */
   detalle?: string
+  /** Texto de presentación arriba de la página de la categoría. */
+  intro?: string
 }
 
 export interface OpcionEntrega {

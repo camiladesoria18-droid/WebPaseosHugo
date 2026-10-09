@@ -1,5 +1,6 @@
-/* Estilos de la página de categoría.
-   Ya usa los colores nuevos; el diseño completo de esta página llega en la parte 3 del Paso 3. */
+/* =============================================================================
+   Estilos de la página de categoría (diseño aprobado)
+   ============================================================================= */
 
 .categoria {
   padding-top: 28px;
@@ -8,42 +9,168 @@
 
 .categoria h1 {
   font-size: 48px;
-  margin: 4px 0 20px;
+  margin: 0 0 6px;
+  color: var(--texto);
+}
+
+.categoria-intro {
+  margin: 0 0 18px;
+  max-width: 560px;
+}
+
+/* --------------------- Botones de categorías ("chips") --------------------- */
+.categoria-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px; /* cómodo para tocar con el dedo */
+  padding: 9px 16px;
+  box-sizing: border-box;
+  border-radius: 999px;
+  border: 1px solid var(--borde);
+  background: var(--blanco);
+  color: var(--texto);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.chip:hover {
+  color: var(--texto);
+  border-color: var(--lila-flecha);
+}
+
+/* La categoría que estás mirando: fondo oscuro y letra beige */
+.chip-activo,
+.chip-activo:hover {
+  background: var(--texto);
+  border-color: var(--texto);
+  color: var(--beige);
+}
+
+/* ------------------- Productos + recuadro "Medí a tu perro" ------------------- */
+.categoria-cuerpo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
 }
 
 .productos {
+  flex: 999 1 640px; /* ocupa casi todo; el recuadro va al costado si entra */
+  min-width: 0;
   list-style: none;
+  margin: 0;
   padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 16px;
+  gap: 18px;
 }
 
 .producto {
+  display: flex;
+  flex-direction: column;
   background: var(--blanco);
   border: 1px solid var(--borde);
   border-radius: var(--redondeo);
-  padding: 16px;
+  overflow: hidden; /* la foto respeta las esquinas redondeadas */
+}
+
+.producto-cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+  padding: 14px 16px 18px;
+}
+
+.producto-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .producto h2 {
-  font-size: 1.2rem;
-  margin: 0 0 6px;
-  color: var(--titulo);
+  margin: 0;
+  font-size: 22px;
 }
 
 .producto p {
-  margin: 6px 0;
+  margin: 0;
+  font-weight: 500;
 }
 
-.producto-nota,
-.producto-opciones {
-  font-size: 0.9rem;
+.producto-nota {
+  font-size: 14px;
   color: var(--texto-suave);
 }
 
 .producto-precio {
+  margin-top: auto !important; /* el precio queda siempre abajo de la tarjeta */
+  padding-top: 6px;
+  font-size: 19px;
+  font-weight: 700 !important;
   color: var(--violeta);
-  font-weight: bold;
 }
 
+.guia-talle {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: var(--redondeo);
+  padding: 20px;
+}
+
+.guia-talle-pregunta {
+  font-weight: 700;
+  color: var(--violeta);
+}
+
+.guia-talle h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.guia-talle ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--texto-suave);
+}
+
+.guia-talle p {
+  margin: 0;
+  font-size: 14px;
+  color: var(--texto-suave);
+}
+
+/* ------------------------------ CELULAR ------------------------------ */
+@media (max-width: 600px) {
+  .categoria {
+    padding-top: 18px;
+  }
+
+  .categoria h1 {
+    font-size: 36px;
+  }
+
+  /* Los chips en una sola fila que se desliza con el dedo */
+  .categoria-botones {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .chip {
+    white-space: nowrap;
+  }
+}

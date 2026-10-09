@@ -66,47 +66,56 @@
     {
       "id": "pretales",
       "nombre": "Pretales",
-      "detalle": "Laila, Alma, Diabla, Tyson"
+      "detalle": "Laila, Alma, Diabla, Tyson",
+      "intro": "Hechos a medida, con herrajes soldados. Elegí el modelo y después el talle y los colores."
     },
     {
       "id": "collares",
       "nombre": "Collares",
-      "detalle": "Básicos, regulables y reforzados"
+      "detalle": "Básicos, regulables y reforzados",
+      "intro": "Básicos (fijos) o regulables, en 5 anchos de cinta."
     },
     {
       "id": "correas",
       "nombre": "Correas",
-      "detalle": "2 m, regulables, hasta 20 m"
+      "detalle": "2 m, regulables, hasta 20 m",
+      "intro": "Correas de 2 m, básicas o regulables. También más largas, a pedido."
     },
     {
       "id": "kits",
       "nombre": "Kits",
-      "detalle": "Collar + pretal + correa"
+      "detalle": "Collar + pretal + correa",
+      "intro": "Collar, pretal y correa del mismo diseño, listos para salir."
     },
     {
       "id": "paseadores",
       "nombre": "Paseadores",
-      "detalle": "Hugo, Peke y Multipaseo"
+      "detalle": "Hugo, Peke y Multipaseo",
+      "intro": "Para pasear más cómodo, con las manos libres o varios perros a la vez."
     },
     {
       "id": "identificadores",
       "nombre": "Identificadores",
-      "detalle": "Letras, chapitas y bordados"
+      "detalle": "Letras, chapitas y bordados",
+      "intro": "El nombre de tu perro, con 1 o 2 números de teléfono."
     },
     {
       "id": "decoracion",
       "nombre": "Decoración",
-      "detalle": "Formas 3D, pines y strass"
+      "detalle": "Formas 3D, pines y strass",
+      "intro": "Detalles para que el diseño sea único."
     },
     {
       "id": "accesorios",
       "nombre": "Accesorios",
-      "detalle": "Porta bolsa, agarraderas y más"
+      "detalle": "Porta bolsa, agarraderas y más",
+      "intro": "Complementos para el paseo de todos los días."
     },
     {
       "id": "paseos",
       "nombre": "Paseos",
-      "detalle": "Paseos y acompañamiento por hora"
+      "detalle": "Paseos y acompañamiento por hora",
+      "intro": "También paseamos a tu perro: paseos, acompañamiento al veterinario o a la peluquería, y paseos personalizados."
     }
   ],
   "productos": [

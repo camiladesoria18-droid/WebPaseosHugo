@@ -32,3 +32,19 @@ export function precioDesdeCategoria(productos: Producto[], idCategoria: string)
     .filter((precio): precio is number => precio !== null)
   return precios.length > 0 ? Math.min(...precios) : null
 }
+
+/**
+ * Para collares y correas: el precio más bajo de la versión básica y de la regulable.
+ * Devuelve null si el producto no tiene versión regulable.
+ */
+export function preciosBasicoYRegulable(producto: Producto): { basico: number; regulable: number } | null {
+  const conRegulable = producto.variantes.filter(
+    (v): v is typeof v & { precio: number; precioRegulable: number } =>
+      v.precio !== null && v.precioRegulable !== undefined,
+  )
+  if (conRegulable.length === 0) return null
+  return {
+    basico: Math.min(...conRegulable.map((v) => v.precio)),
+    regulable: Math.min(...conRegulable.map((v) => v.precioRegulable)),
+  }
+}
